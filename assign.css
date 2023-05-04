@@ -27,6 +27,11 @@ h1{
     z-index: 10;
     text-align: center;
 }
+@media (min-width:900px){
+    h1{
+        font-size: 68px;
+    }
+}
 .card{
     z-index: 10;
     position: relative;
