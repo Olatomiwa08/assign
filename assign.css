@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background: url(/15678-min.jpg);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filter{
+    display: block;position: absolute;
+    top: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+}
+h1{
+    z-index: 10;
+    text-align: center;
+}
+.card{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+.box{
+    width: 300px;
+    background: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+.box span{
+    color: rgb(255, 0, 85);
+    font-size: 40px;
+}
+@media (max-width:988px){
+    .container{
+        height: 100%;
+        padding-top: 120px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .filter{
+        height: 890px;
+    }
+}
+@media (max-width:640px){
+    *{
+        font-size: 100%;
+    }
+    .container{
+        height: 100%;
+        padding-top: 120px;
+        padding-bottom: 50px;
+        background-position: center;
+        background-size: cover;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .filter{
+        height: 1220px;
+    }
+    span{
+        font-size: 28px;
+    }
+}
